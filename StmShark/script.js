@@ -433,4 +433,14 @@ document.addEventListener('DOMContentLoaded', function() {
         // Update timestamp every minute
         setInterval(updateTimestamp, 60000);
     }
+    .chart-container {
+    position: relative;
+    height: 360px; /* 👈 change if you want */
+    width: 100%;
+}
+
+canvas {
+    box-sizing: border-box;
+}
+
 });
