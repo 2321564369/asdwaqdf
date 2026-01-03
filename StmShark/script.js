@@ -44,8 +44,26 @@ document.addEventListener('DOMContentLoaded', function() {
             options: {
                 responsive: true,
                 maintainAspectRatio: false,
+                 scales: {
+        y: {
+            beginAtZero: false,   // 👈 IMPORTANT
+            ticks: {
+                color: '#9ca3af' // optional (Tailwind gray)
+            }
+        },
+        x: {
+            ticks: {
+                color: '#9ca3af'
+            }
+        }
+    },
+
+    plugins: {
+        legend: {
+            display: true
+        }
                 plugins: {
-                    legend: { display: false },
+                    legend: { display: true },
                     tooltip: {
                         mode: 'index',
                         intersect: false,
